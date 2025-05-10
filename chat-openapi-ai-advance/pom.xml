@@ -16,7 +16,7 @@
         <module>chat-openapi-ai-memory</module>
         <module>chat-openapi-ai-persistence</module>
         <module>chat-openapi-ai-prompt</module>
-        <module>chat-openapi-ai-tool</module>
+        <module>chat-openapi-ai-tools</module>
     </modules>
 
     <properties>
