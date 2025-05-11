@@ -25,6 +25,7 @@
         <java.version>17</java.version>
         <langchain4j.version>1.0.0-beta4</langchain4j.version>
         <mybatis-plus.version>3.5.12</mybatis-plus.version>
+        <mybatis-spring.version>3.0.4</mybatis-spring.version>
         <knife4j.version>3.0.3</knife4j.version>
         <knife4j-openapi.version>4.5.0</knife4j-openapi.version>
 
@@ -37,6 +38,13 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis-spring.version}</version>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-spring-boot-starter -->
