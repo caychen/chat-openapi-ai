@@ -33,8 +33,8 @@ public class Appointment {
     @TableField("vehicle_model")
     private String vehicleModel;
 
-    @TableField("shop_id")
-    private Long shopId;
+    @TableField("shop_name")
+    private String shopName;
 
     private String contact;
 
