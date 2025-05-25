@@ -51,7 +51,7 @@ public class EmbeddingTest {
     @Test
     public void testEmbeddingSearch() {
         // 将问题转换成向量数据
-        Embedding queryEmbedding = embeddingModel.embed("你最喜欢的运动是什么").content();
+        Embedding queryEmbedding = embeddingModel.embed("你知道法定代表人是谁吗？").content();
 
         // 创建搜索请求对象
         EmbeddingSearchRequest searchRequest = EmbeddingSearchRequest.builder()
