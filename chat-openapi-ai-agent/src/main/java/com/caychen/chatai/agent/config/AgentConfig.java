@@ -13,7 +13,6 @@ import dev.langchain4j.store.embedding.EmbeddingStoreIngestor;
 import dev.langchain4j.store.embedding.inmemory.InMemoryEmbeddingStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
 import java.util.List;
@@ -23,7 +22,7 @@ import java.util.List;
  * @Date: 2025/5/10 12:49
  * @Description:
  */
-@Configuration
+//@Configuration
 public class AgentConfig {
 
     @Autowired
@@ -46,6 +45,11 @@ public class AgentConfig {
                 .build();
     }
 
+    /**
+     * 使用基于内存的向量数据库
+     *
+     * @return
+     */
     @Bean
     public ContentRetriever contentRetriever() {
         // 创建一个内容检索器，用于从数据库中检索内容

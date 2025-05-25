@@ -21,7 +21,10 @@ import dev.langchain4j.service.spring.AiServiceWiringMode;
         // 配置工具方法
         tools = "appointmentTools",
         // 配置向量数据库
-        contentRetriever = "contentRetriever"
+//        contentRetriever = "contentRetriever"
+
+        // 配置向量数据库，基于pinecone
+        contentRetriever = "contentRetrieverWithPinecone"
 )
 public interface AgentAssistant {
 
