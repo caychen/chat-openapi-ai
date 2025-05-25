@@ -18,6 +18,7 @@
         <module>chat-openapi-ai-prompt</module>
         <module>chat-openapi-ai-tools</module>
         <module>chat-openapi-ai-rag</module>
+        <module>chat-openapi-ai-embed</module>
     </modules>
 
     <properties>
