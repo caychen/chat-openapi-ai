@@ -16,11 +16,16 @@ import dev.langchain4j.service.spring.AiServiceWiringMode;
         // 使用的模型，该名称必须要在上下文中有对应的bean
         // 如果项目中有多个模型，则需要指定
         chatModel = "qwenChatModel",
+        // 配置会话历史记录存储器
         chatMemoryProvider = "chatMemoryProvider",
-        tools = "appointmentTools"
+        // 配置工具方法
+        tools = "appointmentTools",
+        // 配置向量数据库
+        contentRetriever = "contentRetriever"
 )
 public interface AgentAssistant {
 
+    // 配置引入系统提示模板文件
     @SystemMessage(fromResource = "agent-prompt-template.txt")
     String chat(@MemoryId String memoryId, @UserMessage String message);
 }

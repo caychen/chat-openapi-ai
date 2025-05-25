@@ -58,5 +58,11 @@
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
         </dependency>
+
+        <!-- 简单的RAG实现 -->
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-easy-rag</artifactId>
+        </dependency>
     </dependencies>
 </project>
