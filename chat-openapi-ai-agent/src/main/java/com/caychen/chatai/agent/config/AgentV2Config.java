@@ -65,7 +65,7 @@ public class AgentV2Config {
     public EmbeddingStore<TextSegment> embeddingStore() {
         // 初始化向量存储
         return PineconeEmbeddingStore.builder()
-                .apiKey(System.getenv("PINECONE_API_KEY"))
+                .apiKey("pcsk_46mJ8M_PA3sg8ihZ7uTnGq3dPq5AEcd8p3pfoq7mzQca1QrGuCyik7WuQtjvbDyhGHnoL6")
                 .index("my-index")// 指定Pinecone的索引名称，如果不存在，则会自动创建一个新的索引
                 .nameSpace("my-namespace")//指定Pinecone的命名空间，如果命名空间不存在，则会自动创建一个新的命名空间
                 .createIndex(PineconeServerlessIndexConfig.builder()
